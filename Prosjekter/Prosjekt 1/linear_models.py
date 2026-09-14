@@ -9,7 +9,6 @@ class LinearRegression():
         self.lr = lr
         self.n_iterations = n_iterations
 
-        self.train_accuracies = []
         self.loss_history = []
         
     def fit(self, X, y):
@@ -31,6 +30,10 @@ class LinearRegression():
             error = lin_model - y
             m = X.shape[0]
 
+            #Utregning av loss
+            loss = np.mean(error ** 2) #MSE, mean squared erro
+            self.loss_history.append(loss)
+            
             #compute_parameters() fra kompendiet
 
             dw = (2/m) * np.matmul(X.transpose(), error)
