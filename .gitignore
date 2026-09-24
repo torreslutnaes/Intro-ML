@@ -1,5 +1,11 @@
 venv/
+.venv/
 __pycache__/
-.ipynb_checkpoints/
 *.pyc
+.ipynb_checkpoints/
+__MACOSX/
+.DS_Store
 
+# Pensum og PDF-er skal ikke på GitHub
+Pensum/
+*.pdf
