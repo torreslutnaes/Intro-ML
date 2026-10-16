@@ -9,3 +9,4 @@ __MACOSX/
 # Pensum og PDF-er skal ikke på GitHub
 Pensum/
 *.pdf
+Prosjekter/assignment3-1/unsupervised_data.csv
